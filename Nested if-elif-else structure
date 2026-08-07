@@ -1,0 +1,151 @@
+elif(username == "suman@12" and password == 1):
+    
+    print("Welcome, Suman@1")
+    playlist_num = int(input("Enter your playlist number: "))
+    
+    if(playlist_num == 0):
+        print("This is your romatic songs' playlist")
+        
+        song_num = int(input("Enter your song number "))
+        
+        
+        if(song_num == 1):
+            print("Playing...... romatic song 1")
+            
+        elif(song_num == 2):
+            print("Playing........romatic song 2")
+        
+        elif(song_num == 3):
+            print("Playing........romatic song 3")
+            
+        elif(song_num == 4):
+            print("Playing........romatic song 4")
+            
+        elif(song_num == 5):
+            print("Playing........romatic song 5")
+            
+            
+        elif(song_num == 6):
+            print("Playing........romatic song 6")   
+        
+        else:
+            print("Wrong Song number!")
+        
+        
+        
+    elif(playlist_num == 1):
+        print("This is your rock songs' playlist")
+        
+        song_num = int(input("Enter your song number "))
+        
+        
+        if(song_num == 1):
+            print("Playing...... rock song 1")
+            
+        elif(song_num == 2):
+            print("Playing........rock song 2")
+        
+        elif(song_num == 3):
+            print("Playing........rock song 3")
+            
+        elif(song_num == 4):
+            print("Playing........rock song 4")
+            
+        elif(song_num == 5):
+            print("Playing........rock song 5")
+            
+            
+        elif(song_num == 6):
+            print("Playing........rock song 6")   
+        
+        else:
+            print("Wrong Song number!")
+        
+        
+    elif(playlist_num == 2):
+        print("This is your Pop songs' playlist")
+        
+        song_num = int(input("Enter your song number "))
+        
+        
+        if(song_num == 1):
+            print("Playing...... Pop song 1")
+            
+        elif(song_num == 2):
+            print("Playing........Pop song 2")
+        
+        elif(song_num == 3):
+            print("Playing........Pop song 3")
+            
+        elif(song_num == 4):
+            print("Playing........Pop song 4")
+            
+        elif(song_num == 5):
+            print("Playing........Pop song 5")
+            
+            
+        elif(song_num == 6):
+            print("Playing........Pop song 6")   
+        
+        else:
+            print("Wrong Song number!")
+        
+        
+    elif(playlist_num == 3):
+        print("This is your Classical songs' playlist")
+        song_num = int(input("Enter your song number "))
+        
+        
+        if(song_num == 1):
+            print("Playing...... Classical song 1")
+            
+        elif(song_num == 2):
+            print("Playing........Classical song 2")
+        
+        elif(song_num == 3):
+            print("Playing........Classical song 3")
+            
+        elif(song_num == 4):
+            print("Playing........Classical song 4")
+            
+        elif(song_num == 5):
+            print("Playing........Classical song 5")
+            
+            
+        elif(song_num == 6):
+            print("Playing........Classical song 6")   
+        
+        else:
+            print("Wrong Song number!")
+        
+        
+    elif(playlist_num == 4):
+        print("This is your jazz songs' playlist")
+        song_num = int(input("Enter your song number "))
+        
+        
+        if(song_num == 1):
+            print("Playing...... jazz song 1")
+            
+        elif(song_num == 2):
+            print("Playing........jazz song 2")
+        
+        elif(song_num == 3):
+            print("Playing........jazz song 3")
+            
+        elif(song_num == 4):
+            print("Playing........jazz song 4")
+            
+        elif(song_num == 5):
+            print("Playing........jazz song 5")
+            
+            
+        elif(song_num == 6):
+            print("Playing........jazz song 6")   
+        
+        else:
+            print("Wrong Song number!")
+        
+        
+    else:
+        print("Wrong Playlist number")    
