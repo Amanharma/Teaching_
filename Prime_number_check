@@ -1,0 +1,21 @@
+num = int(input("Enter a prime number?"))
+
+divisor = 2
+flag = True
+
+while(divisor< num):
+    if(num % divisor == 0):
+        flag = False
+        break
+
+    divisor += 1    
+
+
+
+
+
+if(flag == True):
+    print("The number is prime!")
+
+else:
+    print("The number is not prime!")    
