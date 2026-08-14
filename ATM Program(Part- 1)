@@ -1,0 +1,96 @@
+S_PIN_number = 1234
+S_name = "Aman Sharma"
+S_number = "85667434"
+S_key = "Sharma"
+S_amount = 50000
+
+
+
+
+
+E_PIN = int(input("Enter your 4-digit PIN Number: "))
+
+
+
+if(E_PIN == S_PIN_number):
+    print(f"Welcome {S_name}")
+
+    task = int(input("Enter 0 for balance check\nEnter 1 for Cash withdrawal\nEnter 2 for Cash Deposit\nEnter 3 for PIN Change\nEnter 4 for name and number change\n"))
+
+    if(task == 0):
+        print(f"Your stored amount: {S_amount}")
+
+
+    elif(task == 1):
+       E_amount = int(input("How much money do you want to withdraw?: "))
+       if(E_amount <= S_amount):
+        S_amount = S_amount - E_amount
+        print(f"The amount has been withdrawn Your remaining balance is {S_amount}")
+
+       elif((E_amount > S_amount)):
+        print("The balance is insufficient!") 
+
+
+    elif(task == 2):
+        D_amount = int(input("Enter your depoist amount!"))
+
+        S_amount = S_amount + D_amount
+        print(f"Your amount has been Depositted sucessfully - your Stored amount is {S_amount}")
+
+    elif(task == 3):
+        E_key = input("Enter your pass key for changing the PIN: ")
+        if(E_key == S_key):
+            N_PIN = input("Enter your new 4-digit PIN number")
+            S_PIN_number = N_PIN
+            print(S_PIN_number)
+            
+    elif(task == 4):
+         E_key = input("Enter your pass key for changing your name or number: ")
+         if(E_key == S_key):
+            change = int(input("Enter 1, 2 or 3\n1 for Name change\n2 for Number change\n3 for both"))
+
+            if(change == 1):
+               n_number = input("Enter your new number: ")
+               S_number = n_number
+               print(f"Thanks for using us We have updated your number - Your new number is {S_number}")
+
+            elif(change == 2):
+                
+                n_name = input("Enter your new name: ")  
+                S_name =  n_name
+                print(f"Thanks for using us We have updated your name  -Your new name is {S_name}")
+
+            elif(change ==  3):
+                n_name = input("Enter your new name: ")    
+                n_number = input("Enter your new number")
+                S_number = n_number
+                S_name =  n_name
+                print(f"Thanks for using us We have updated your name and number - Your new number is {S_number} & Your new name is {S_name}")
+
+
+else:
+    print("Your PIN is Incorrect")
+    counter = 0
+    Again_try = int(input("Do you want to try again\nEnter 1 for Yes or 0 for not: "))
+
+
+
+
+
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
