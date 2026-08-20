@@ -1,0 +1,64 @@
+fare = 0
+
+
+on_board = input("Enter your on_borad place: ").upper()
+Departure = input("Enter your Destination place: ").upper()
+
+
+if((on_board == "DHANSA" and Departure == "DWARKA") or (on_board == "DWARKA" and Departure == "DHANSA")):
+    fare = 40
+
+elif((on_board == "DHANSA" and Departure == "NOIDA" or on_board == "NOIDA" and Departure == "DHANSA" )):
+    fare = 60
+
+elif((on_board == "DHANSA" and Departure == "RAJIV CHOWAK") or (on_board == "RAJIV CHOWAK" and Departure == "DHANSA")):
+    fare = 30
+elif((on_board == "DHANSA" and Departure == "VASHALI") or (on_board == "VASHALI" and Departure == "DHANSA")):
+    fare = 64
+
+
+
+
+elif((on_board == "DWARKA" and Departure == "NOIDA" or on_board == "NOIDA" and Departure == "DWARKA")):
+    fare = 50
+
+elif((on_board == "DWARKA" and Departure == "RAJIV CHOWAK") or (on_board == "RAJIV CHOWAK" and Departure == "DWARKA")):
+    fare = 30
+elif((on_board == "DWARKA" and Departure == "VASHALI") or (on_board == "VASHALI" and Departure == "DWARKA")):
+    fare = 64
+
+
+
+
+elif((on_board == "NOIDA" and Departure == "RAJIV CHOWK") (on_board == "RAJIV CHOWK" and Departure == "NOIDA")):
+    fare = 40
+
+elif((on_board == "NOIDA" and Departure == "VASHALI") or (on_board == "VASHALI" and Departure == "NOIDA")):
+    fare = 20
+
+
+
+
+elif(on_board == "RAJIV CHOWK" and Departure == "VASHALI"):
+    fare = 34
+
+elif((on_board == "RAJIV CHOWK" and Departure == "VASHALI") or (on_board == "VASHALI" and Departure == "RAJIV CHOWK")):
+    fare = 34
+
+
+else: 
+    print("Incorrect Input either Destination or onborading place!")
+
+
+number_of_persons = int(input("How many tickets do you want!"))
+
+
+total_fare = number_of_persons * fare
+print(total_fare)
+
+
+
+
+  
+
+
