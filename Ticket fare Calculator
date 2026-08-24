@@ -1,56 +1,83 @@
 fare = 0
 
+counter = 0
 
-on_board = input("Enter your on_borad place: ").upper()
-Departure = input("Enter your Destination place: ").upper()
-
-
-if((on_board == "DHANSA" and Departure == "DWARKA") or (on_board == "DWARKA" and Departure == "DHANSA")):
-    fare = 40
-
-elif((on_board == "DHANSA" and Departure == "NOIDA" or on_board == "NOIDA" and Departure == "DHANSA" )):
-    fare = 60
-
-elif((on_board == "DHANSA" and Departure == "RAJIV CHOWAK") or (on_board == "RAJIV CHOWAK" and Departure == "DHANSA")):
-    fare = 30
-elif((on_board == "DHANSA" and Departure == "VASHALI") or (on_board == "VASHALI" and Departure == "DHANSA")):
-    fare = 64
+while(counter <3):
 
 
+    on_board = input("Enter your on_borad place: ").upper()
+    Departure = input("Enter your Destination place: ").upper()
+    number_of_persons = int(input("How many tickets do you want!"))
 
 
-elif((on_board == "DWARKA" and Departure == "NOIDA" or on_board == "NOIDA" and Departure == "DWARKA")):
-    fare = 50
+    if((on_board == "DHANSA" and Departure == "DWARKA") or (on_board == "DWARKA" and Departure == "DHANSA")):
+        fare = 40
+        break
 
-elif((on_board == "DWARKA" and Departure == "RAJIV CHOWAK") or (on_board == "RAJIV CHOWAK" and Departure == "DWARKA")):
-    fare = 30
-elif((on_board == "DWARKA" and Departure == "VASHALI") or (on_board == "VASHALI" and Departure == "DWARKA")):
-    fare = 64
+    elif((on_board == "DHANSA" and Departure == "NOIDA" or on_board == "NOIDA" and Departure == "DHANSA" )):
+        fare = 60
+        break
 
+    elif((on_board == "DHANSA" and Departure == "RAJIV CHOWAK") or (on_board == "RAJIV CHOWAK" and Departure == "DHANSA")):
+        fare = 30
+        break
 
-
-
-elif((on_board == "NOIDA" and Departure == "RAJIV CHOWK") (on_board == "RAJIV CHOWK" and Departure == "NOIDA")):
-    fare = 40
-
-elif((on_board == "NOIDA" and Departure == "VASHALI") or (on_board == "VASHALI" and Departure == "NOIDA")):
-    fare = 20
+    elif((on_board == "DHANSA" and Departure == "VASHALI") or (on_board == "VASHALI" and Departure == "DHANSA")):
+        fare = 64
+        break
 
 
 
 
-elif(on_board == "RAJIV CHOWK" and Departure == "VASHALI"):
-    fare = 34
+    elif((on_board == "DWARKA" and Departure == "NOIDA" or on_board == "NOIDA" and Departure == "DWARKA")):
+        fare = 50
 
-elif((on_board == "RAJIV CHOWK" and Departure == "VASHALI") or (on_board == "VASHALI" and Departure == "RAJIV CHOWK")):
-    fare = 34
-
-
-else: 
-    print("Incorrect Input either Destination or onborading place!")
+    elif((on_board == "DWARKA" and Departure == "RAJIV CHOWAK") or (on_board == "RAJIV CHOWAK" and Departure == "DWARKA")):
+        fare = 30
+    elif((on_board == "DWARKA" and Departure == "VASHALI") or (on_board == "VASHALI" and Departure == "DWARKA")):
+        fare = 64
 
 
-number_of_persons = int(input("How many tickets do you want!"))
+
+
+    elif((on_board == "NOIDA" and Departure == "RAJIV CHOWK") or (on_board == "RAJIV CHOWK" and Departure == "NOIDA")):
+        fare = 40
+
+    elif((on_board == "NOIDA" and Departure == "VASHALI") or (on_board == "VASHALI" and Departure == "NOIDA")):
+        fare = 20
+
+
+
+
+    elif(on_board == "RAJIV CHOWK" and Departure == "VASHALI"):
+        fare = 34
+
+    elif((on_board == "RAJIV CHOWK" and Departure == "VASHALI") or (on_board == "VASHALI" and Departure == "RAJIV CHOWK")):
+        fare = 34
+
+
+    else: 
+        print("Incorrect Input either Destination or onborading place!")
+        counter += 1
+        
+        try_again = int(input(f"Do you want to try again or not? Enter 1 for yes 0 for NO"))
+
+        if(try_again == 1):
+            continue
+
+        elif(try_again == 0):
+            break
+
+        else: 
+            print("incorrect input")
+            counter += 1         
+
+
+
+
+
+
+
 
 
 total_fare = number_of_persons * fare
@@ -59,6 +86,4 @@ print(total_fare)
 
 
 
-  
-
-
+    
