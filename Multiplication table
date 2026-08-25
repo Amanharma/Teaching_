@@ -1,0 +1,20 @@
+starting = 2
+
+while(starting <= 5):
+
+    multiple = 1
+    while(multiple <= 10):
+        answer = starting * multiple
+        print(f"{starting} * {multiple} = {answer}")
+
+        multiple += 1
+
+
+
+    starting += 1  
+    print("\n")  
+
+
+        
+    
+
