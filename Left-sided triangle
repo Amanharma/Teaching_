@@ -1,0 +1,18 @@
+row = 5
+
+while(row >= 1):
+    
+    col = 1
+    while(col <= 5):
+        if(col < row):
+            print(" ", end=" ")
+            col += 1
+
+        elif(col >= row):
+            print("*", end=" ") 
+            col += 1
+
+
+
+    row -= 1
+    print()
