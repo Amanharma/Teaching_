@@ -1,0 +1,32 @@
+row = 1
+
+
+while(row<= 5):
+
+    col = 1
+
+    while(col<row and col <= 4):
+        print(" ", end=" ")
+        col += 1
+
+
+
+
+    
+    while(col>= row and col <= row + 4):
+        print("* ", end=" ")  
+        col += 1
+
+    
+    row = row + 1
+    print()    
+
+
+
+ 
+
+
+
+
+
+
