@@ -1,0 +1,71 @@
+# #------------traversing------------------
+l_1 = [12, 34, 21, 43, 1, 23]
+
+i = 0
+x =len(l_1)
+while(i< x):
+    print(l_1[i], end= ", ")
+    i += 1
+
+#-------------------insertion------------------
+
+
+ def insertion(index, element, li):
+     ref_li = [0] * (len(li) +1)
+
+     i = 0
+    while(i<index):
+        ref_li[i]= li[i]
+        i += 1
+
+    ref_li[i] = element
+
+    while(i< len(li)):
+        ref_li[i+1]= li[i]
+        i += 1
+    
+    return ref_li    
+
+
+print(insertion(index=6, element= "Suman", li=l_1)) 
+
+# --------------------deletion-------------------
+
+
+def deletion(li, index):
+    ref_li = [0] * (len(li)-1)
+    
+    i=0
+    while(i<index):
+        ref_li[i] = li[i]
+        i += 1
+
+    while(i< len(li)-1):
+        ref_li[i] = li[i+1]
+        i+= 1
+    return ref_li
+    
+
+print(deletion(li=l_1, index=0))   
+
+
+#----------------------searching--------------------
+
+
+
+def search(li, element):
+    ref_var = element
+
+    i= 0
+    while(i<=(len(li)-1)):
+        if(ref_var == li[i]):
+            return i
+            break
+        elif(not(ref_var == li[i])):
+            i += 1
+        else:
+            return "The number is not in the list!"                
+            
+print(search(li=l_1, element=34))     
+
+
