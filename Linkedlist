@@ -1,0 +1,43 @@
+class Node:
+
+    def __init__(self, data):
+        self.data = data
+        self.next_address = None
+
+
+
+        
+class LinkedList:
+    def __init__(self):
+        self.head = None
+
+    #Insert in the beginning
+    def intser_at_beginning(self, data):
+        new_node = Node(data)
+
+        new_node.next_address= self.head
+        self.head= new_node
+
+
+list1= LinkedList()
+list1.intser_at_beginning("Aman")
+list1.intser_at_beginning("name1")
+list1.intser_at_beginning("name3")
+list1.intser_at_beginning("name2")
+list1.intser_at_beginning("name4")
+
+
+
+
+# print(ref_a)
+# print(ref_a.next_address)
+# print((ref_a.next_address).next_address)
+# print(((ref_a.next_address).next_address).next_address)
+# print((((ref_a.next_address).next_address).next_address).next_address)
+# print(((((ref_a.next_address).next_address).next_address).next_address).next_address)
+
+ref_a = list1.head
+
+while(ref_a != None):
+    print(ref_a.data)
+    ref_a = ref_a.next_address
